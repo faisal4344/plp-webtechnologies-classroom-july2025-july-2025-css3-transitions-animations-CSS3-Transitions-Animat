@@ -1,0 +1,80 @@
+/* ===============================
+   General Styles
+   =============================== */
+body {
+    font-family: 'Poppins', sans-serif;
+    text-align: center;
+    background-color: #f0f8ff;
+    margin: 0;
+    padding: 0;
+}
+
+header, footer {
+    background-color: #0077cc;
+    color: white;
+    padding: 15px;
+}
+
+h1 {
+    margin: 0;
+}
+
+/* ===============================
+   Part 1: CSS Transitions & Animations
+   =============================== */
+
+/* Button hover effect with transition */
+button {
+    padding: 10px 20px;
+    font-size: 16px;
+    margin: 10px;
+    cursor: pointer;
+    background-color: #00aaff;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    transition: background-color 0.5s ease, transform 0.3s ease;
+}
+
+button:hover {
+    background-color: #004466;
+    transform: scale(1.1);
+}
+
+/* Box for animation */
+#box {
+    width: 150px;
+    height: 150px;
+    background-color: red;
+    margin: 20px auto;
+    border-radius: 10px;
+    transition: transform 1s, background-color 1s;
+}
+
+/* Keyframe animation */
+@keyframes rotateBox {
+    0% { transform: rotate(0deg); }
+    50% { transform: rotate(180deg); }
+    100% { transform: rotate(360deg); }
+}
+
+.rotate {
+    animation: rotateBox 2s linear;
+}
+
+/* Calculator input styles */
+#calculator {
+    margin-top: 30px;
+}
+
+input {
+    padding: 8px;
+    margin: 5px;
+    width: 100px;
+}
+
+/* Result display */
+#sumResult {
+    font-weight: bold;
+    color: #0077cc;
+}
